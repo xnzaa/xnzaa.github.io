@@ -1,22 +1,22 @@
 ---
 layout: index
-title: xnzaa's blog
+title: luckyshq's blog
 ---
 
 <article id="post__content">
-  <h1 id="post__title">Welcome to xnzaa's blog</h1>
+  <h1 id="post__title">Welcome to luckyshq's blog</h1>
   <h2>关于我</h2>
   <ul>
-    <li>嵌入式码农</li>
-    <li>梦想逆袭的屌丝</li>
-    <li>秦时明月死忠</li>
-    <li>Linux万岁</li>
-    <li>什么时候做个自己的产品出来</li>
+    <li>Android码农</li>
+    <li>外貌协会资深会员</li>
+    <li>VRVA死忠</li>
+    <li>New Tech万岁</li>
+    <li>什么时候做个SAO出来</li>
   </ul>
   <h2>联系我</h2>
   <ul>
-    <li>Github：<a href="https://github.com/xnzaa">xnzaa</a></li>
-    <li>Mail: <a href="mailto:small_arm@163.com">small_arm@163.com</a></li>
+    <li>Github：<a href="https://github.com/luckyshq">luckyshq</a></li>
+    <li>Mail: <a href="mailto:luckyshq43@gmail.com">luckyshq43@gmail.com</a></li>
   </ul>
   <p>PS:在读blog时鼠标放屏幕右边会出现目录喔~</p>
   <p>标题前带'#'都是还没写完或者会持续更新的blog. =,=</p>
