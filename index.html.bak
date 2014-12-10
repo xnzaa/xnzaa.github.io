@@ -5,7 +5,7 @@ title: xnzaa's blog
 
 <article id="post__content">
   <h1 id="post__title">Welcome to xnzaa's blog</h1>
-  <h2>关于我</h2>
+  <h2>About me</h2>
   <ul>
     <li>嵌入式码农</li>
     <li>梦想逆袭的屌丝</li>
@@ -13,12 +13,12 @@ title: xnzaa's blog
     <li>Linux万岁</li>
     <li>什么时候做个自己的产品出来</li>
   </ul>
-  <h2>联系我</h2>
+  <h2>Contact me</h2>
   <ul>
     <li>Github：<a href="https://github.com/xnzaa">xnzaa</a></li>
     <li>Mail: <a href="mailto:small_arm@163.com">small_arm@163.com</a></li>
   </ul>
   <p>PS:在读blog时鼠标放屏幕右边会出现目录喔~</p>
   <p>标题前带'#'都是还没写完或者会持续更新的blog. =,=</p>
-  <p>blog中部分网址需要科学上网的支持(对应链接前会加上'*'),想要便捷科学上网<a href="http://honx.in/i/VDZK_c6vD3N_Jgoj">请点这里</a></p>
+ <!-- <p>blog中部分网址需要科学上网的支持(对应链接前会加上'*'),想要便捷科学上网<a href="http://honx.in/i/VDZK_c6vD3N_Jgoj">请点这里</a></p>-->
 </article> <!-- end #post__content -->
