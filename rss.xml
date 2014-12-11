@@ -1,0 +1,26 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>luckyshq's blog</title>
+    <link>luckyshq.github.io</link>
+    <atom:link href="luckyshq.github.io/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Computer can change your life for the better.</description>
+    <language>zh-cn</language>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+
+    {% for post in site.posts limit:10 %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>luckyshq.github.io{{ post.url }}</link>
+      <pubDate>{{ post.date | date_to_string }}</pubDate>
+      <author>luckyshq</author>
+      <guid>luckyshq.github.io{{ post.id }}</guid>
+      <description>{{ post.content | xml_escape }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
