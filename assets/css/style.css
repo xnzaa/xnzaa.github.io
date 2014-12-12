@@ -110,7 +110,7 @@ a {
 #avatar {
   width: 100px;
   height: 100px;
-  margin: 55px auto 35px;
+  margin: 25px auto 15px;
   background: url(/assets/img/avatar.png);
   border-radius: 50%;
   box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
