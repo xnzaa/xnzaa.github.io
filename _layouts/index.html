@@ -42,10 +42,13 @@
 
         <nav id="pl__container">
 
-		 {% for post in site.posts %}
+		 {% i=0 posttemp=NULL for post in site.posts %}
+		 {% if(posttemp.date!=post.date) %}
 		 <a class="pl__time_total">
 		 <strong >{{ post.date | date: "%b %Y" }}</strong>
 		 </a>
+		 {% posttemp.date=post.date %}
+		 {% endif %}
           <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span><strong class="pl__date">{{ post.categories }}</strong></a>
 		{% endfor %}
         </nav>
