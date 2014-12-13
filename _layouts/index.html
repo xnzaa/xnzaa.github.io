@@ -43,7 +43,7 @@
         <nav id="pl__container">
 
 		 {% for post in site.posts %}
-		 <a class="pl__title">
+		 <a class="pl__time_total">
 		 <strong class="pl__date">{{ post.date | date: "%b %Y" }}</strong>
 		 </a>
           <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span></a>
