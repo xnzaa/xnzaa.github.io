@@ -41,9 +41,9 @@
         </form>
 
         <nav id="pl__container">
-		 {% string temp="1" %}
+		 {% String temp="1" %}
 		 {% for post in site.posts %}
-		 {% temp=(string){{ post.date | date: "%b %Y" }} %}
+		 {% temp=(String){{ post.date | date: "%b %Y" }} %}
 		 <a class="pl__time_total">
 		 <!--<strong >{{ post.date | date: "%b %Y" }}</strong>-->
 		 <strong >{{ temp | date: "%b %Y" }}</strong>
