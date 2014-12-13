@@ -42,7 +42,7 @@
 
         <nav id="pl__container">
 
-		 {% i=0 posttemp=NULL for post in site.posts %}
+		 {% posttemp=NULL for post in site.posts %}
 		 {% if(posttemp.date!=post.date) %}
 		 <a class="pl__time_total">
 		 <!--<strong >{{ post.date | date: "%b %Y" }}</strong>-->
