@@ -41,7 +41,7 @@
         </form>
 
         <nav id="pl__container">
-        {% i=0 posttemp= NULL for post in site.posts %}
+        {% i=0 posttemp=NULL for post in site.posts %}
 		  {% if (posttemp==post||i=0) %}
 			<strong class="pl__date">{{ post.date | date: "%b %Y" }}</strong>
 <!--<span class="pl__date">{{ post.date | date: "%b %Y" }}</span>-->
