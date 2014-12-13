@@ -44,10 +44,10 @@
         {% i=0 posttemp=NULL for post in site.posts %}
 		<!-- {% if (posttemp!=post||i=0) %}-->
 		<!--<strong class="pl__date">123</strong>-->
-		<!--<strong class="pl__date">{{ post.date | date: "%b %Y" }}</strong>-->
-		<a><span class="pl__date">{{ post.date | date: "%b %Y" }}</span></a>
+		<!--<strong class="pl__date">{{ post.date | date: "%b %Y" }}</strong>  <a></a>-->
+		
 		  <!--{% i++ posttemp=post endif %}-->
-          <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span></a>
+          <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span><span class="pl__date">{{ post.date | date: "%b %Y" }}</span></a>
         {% endfor %}
         </nav>
       </div> <!-- end #posts-list -->
