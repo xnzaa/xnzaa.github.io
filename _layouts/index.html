@@ -42,10 +42,12 @@
 
         <nav id="pl__container">
         {% i=0 posttemp=NULL for post in site.posts %}
-		  {% if (posttemp!=post||i=0) %}
-			<strong class="pl__date">{{ post.date | date: "%b %Y" }}</strong>
+		 <!-- {% if (posttemp!=post||i=0) %}-->
+		 
+			<strong class="pl__date">123</strong>
+			<!--<strong class="pl__date">{{ post.date | date: "%b %Y" }}</strong>-->
 <!--<span class="pl__date">{{ post.date | date: "%b %Y" }}</span>-->
-		  {% i++ posttemp=post endif %}
+		  <!--{% i++ posttemp=post endif %}-->
           <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span></a>
         {% endfor %}
         </nav>
