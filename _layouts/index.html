@@ -46,7 +46,7 @@
 		 <a class="pl__time_total">
 		 <strong >{{ post.date | date: "%b %Y" }}</strong>
 		 </a>
-          <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span><strong >{{ post.categories }}</strong></a>
+          <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span><strong class="pl__data">{{ post.categories }}</strong></a>
 		{% endfor %}
         </nav>
       </div> <!-- end #posts-list -->
