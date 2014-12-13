@@ -91,7 +91,7 @@ a {
    Tags
 \*---------------------------------*/
 #tags {
-  width: 165px;
+  width: 135px;
   height: 100%;
   background: #474d57;
   border-right: 1px solid #3c4149;
@@ -112,7 +112,7 @@ a {
   height: 100px;
   margin: 25px auto 15px;
   background: url(/assets/img/avatar.png);
-  border-radius: 50%;
+  border-radius: 20%;
   box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
   overflow: hidden;
   display: block; }
@@ -132,13 +132,13 @@ a {
 #tags__ul {
   margin: 0;
   padding: 0;
-  font-size: 17px;
+  font-size: 15px;
   border-top: 1px solid #3c4149;
   border-bottom: 1px solid #525965;
   list-style: none; }
 
 .tags__li {
-  padding: 12px 35px 9px;
+  padding: 12px 20px 9px;
   border-top: 1px solid #525965;
   border-bottom: 1px solid #3c4149;
   cursor: pointer; }
