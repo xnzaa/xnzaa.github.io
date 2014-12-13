@@ -19,6 +19,7 @@ if ($(window).width() <= 1280) {
     tag6       = $('.system'),
     tag7       = $('.reading'),
     tag8       = $('.about');
+	tag9       = $('.about');
 var sidebar    = $('#sidebar'),
     container  = $('#post'),
     content    = $('#pjax'),
