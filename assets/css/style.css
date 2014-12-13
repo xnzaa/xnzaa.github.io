@@ -108,8 +108,8 @@ a {
       display: none; } }
 
 #avatar {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin: 25px auto 15px;
   background: url(/assets/img/avatar.png);
   border-radius: 20%;
