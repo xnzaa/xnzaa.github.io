@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Interview Experience of Tencent  CVTE"
+title:  "The Interview Experience of Tencent"
 date:   2014-12-14 00:38:34
 categories: life
 ---
