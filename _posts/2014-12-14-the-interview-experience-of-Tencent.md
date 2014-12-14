@@ -2,7 +2,7 @@
 layout: post
 title:  "The Interview Experience of Tencent CVTE"
 date:   2014-12-14 00:38:34
-categories: my_life
+categories: life
 ---
 ### In your lovely openSUSE, you can add, delete and manage your Software Repositories through powerful and wonderful YaST.
 
