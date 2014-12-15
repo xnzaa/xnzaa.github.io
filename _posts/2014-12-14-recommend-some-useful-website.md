@@ -54,7 +54,7 @@ Kickoff menu -> Computer tab -> YaST -> software -> Software Repositories -> Cli
 
 
 
->* title: 1
+>* title: Äã
 >* URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
 
 >* title: 1233
