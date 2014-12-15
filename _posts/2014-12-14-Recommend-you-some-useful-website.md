@@ -6,11 +6,6 @@ categories: life
 ---
 
 
-#### In your lovely openSUSE, you can add, delete and manage your Software Repositories through powerful and wonderful YaST.
-
-
-
-
 
 >* title: 谷粉搜搜：不翻墙也能用Google 
 >* URL: [http://www.gfsoso.com/](http://www.gfsoso.com/)
@@ -23,7 +18,6 @@ categories: life
 
 >* title: 海投网：找工作我看行
 >* URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
-
 
 >* title: 海投网：找工作我看行
 >* URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
