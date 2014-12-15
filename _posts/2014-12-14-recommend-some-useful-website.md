@@ -12,7 +12,7 @@ categories: editor
 ### 畅游无线/新一代翻墙利器
 [http://www.weibo.com/ChangYouWuXian](http://www.weibo.com/ChangYouWuXian)
 
-### Linux 入门教程/我要做学霸
+### Linux入门教程/我要做学霸
 [http://www.92csz.com/study/linux/](http://www.92csz.com/study/linux/)
 
 ### 海投网/找工作我看行
