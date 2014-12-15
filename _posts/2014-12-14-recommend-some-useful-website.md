@@ -54,14 +54,14 @@ Kickoff menu -> Computer tab -> YaST -> software -> Software Repositories -> Cli
 
 
 
->* title: 163/Update
->* URL: [http://mirrors.163.com/openSUSE/update/12.3/](http://mirrors.163.com/openSUSE/update/12.3/)
+>* title: 海投网/找工作我看行
+>* URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
 
->* title: 163/Oss
->* URL: [http://mirrors.163.com/openSUSE/distribution/12.3/repo/oss/](http://mirrors.163.com/openSUSE/distribution/12.3/repo/oss/)
+>* title: 海投网：找工作我看行
+>* URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
 
->* title: 163/NON-Oss
->* URL: [http://mirrors.163.com/openSUSE/distribution/12.3/repo/non-oss/](http://mirrors.163.com/openSUSE/distribution/12.3/repo/non-oss/)
+>* title: 武汉理工小车/没兴趣的慎点
+>* URL: [http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html](http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html)
 
 
 ### And then, we have finished our work!
