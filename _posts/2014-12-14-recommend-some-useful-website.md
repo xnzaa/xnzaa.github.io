@@ -54,13 +54,13 @@ Kickoff menu -> Computer tab -> YaST -> software -> Software Repositories -> Cli
 
 
 
->* title: 海投网/找工作我看行
+>* title: 1
 >* URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
 
->* title: 海投网：找工作我看行
+>* title: 1233
 >* URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
 
->* title: 武汉理工小车/没兴趣的慎点
+>* title: 123
 >* URL: [http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html](http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html)
 
 
