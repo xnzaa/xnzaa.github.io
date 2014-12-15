@@ -8,6 +8,10 @@ categories: other
 
 #### In your lovely openSUSE, you can add, delete and manage your Software Repositories through powerful and wonderful YaST.
 
+
+
+
+
 >* title: 谷粉搜搜：不翻墙也能用Google 
 >* URL: [http://www.gfsoso.com/](http://www.gfsoso.com/)
 
@@ -30,3 +34,6 @@ categories: other
 ### In your lovely openSUSE, you can add, delete and manage your Software Repositories through powerful and wonderful YaST.
 
 ---
+
+#### REFERENCE:
+[http://lug.ustc.edu.cn/sites/opensuse-guide/repositories.php](http://lug.ustc.edu.cn/sites/opensuse-guide/repositories.php) (Chinese version)
