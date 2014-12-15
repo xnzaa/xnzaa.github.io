@@ -2,7 +2,7 @@
 layout: post
 title:  "Recommend you some useful website"
 date:   2014-12-14 00:38:39
-categories: other
+categories: life
 ---
 
 
