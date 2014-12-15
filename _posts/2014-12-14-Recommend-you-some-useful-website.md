@@ -54,23 +54,23 @@ Kickoff menu -> Computer tab -> YaST -> software -> Software Repositories -> Cli
 
 
 
->* title: 12 
->* URL: [http://www.gfsoso.com/](http://www.gfsoso.com/)
+title: 12 
+URL: [http://www.gfsoso.com/](http://www.gfsoso.com/)
 
->* title: 畅游无线/新一代翻墙利器
->* URL: [http://www.weibo.com/ChangYouWuXian](http://www.weibo.com/ChangYouWuXian)
+title: 畅游无线/新一代翻墙利器
+URL: [http://www.weibo.com/ChangYouWuXian](http://www.weibo.com/ChangYouWuXian)
 
->* title: 123
->* URL: [http://www.92csz.com/study/linux/](http://www.92csz.com/study/linux/)
+title: 123
+URL: [http://www.92csz.com/study/linux/](http://www.92csz.com/study/linux/)
 
->* title: 123
->* URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
+title: 123
+URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
 
->* title: 123
->* URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
+title: 123
+URL: [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
 
->* title: 123
->* URL: [http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html](http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html)
+title: 123
+URL: [http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html](http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html)
 
 
 ### In your lovely openSUSE, you can add, delete and manage your Software Repositories through powerful and wonderful YaST.
