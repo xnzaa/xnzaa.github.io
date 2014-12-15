@@ -51,6 +51,9 @@ Kickoff menu -> Computer tab -> YaST -> software -> Software Repositories -> Cli
 
 #### then input following things in the input boxes:
 
+
+
+
 >* title: 谷粉搜搜：不翻墙也能用Google 
 >* URL: [http://www.gfsoso.com/](http://www.gfsoso.com/)
 
@@ -68,6 +71,7 @@ Kickoff menu -> Computer tab -> YaST -> software -> Software Repositories -> Cli
 
 >* title: 武汉理工小车：没兴趣的慎点
 >* URL: [http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html](http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html)
+
 
 ### In your lovely openSUSE, you can add, delete and manage your Software Repositories through powerful and wonderful YaST.
 
