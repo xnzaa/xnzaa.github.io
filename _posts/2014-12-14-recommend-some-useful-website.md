@@ -1,27 +1,25 @@
 ---
 layout: post
-title:  "Recommend you some useful websiteÄãºÃ"
-date:   2014-12-15 00:38:39
+title:  "åœ¨Atomé‡Œé¢é…ç½®Snippets"
+date:    2014-10-15 20:22
 categories: editor
 ---
 
----
-
-¹È·ÛËÑËÑ ²»·­Ç½Ò²ÄÜÓÃGoogle 
+è°·ç²‰æœæœ ä¸ç¿»å¢™ä¹Ÿèƒ½ç”¨Google 
 [http://www.gfsoso.com/](http://www.gfsoso.com/)
 
-³©ÓÎÎŞÏß ĞÂÒ»´ú·­Ç½ÀûÆ÷
+ç•…æ¸¸æ— çº¿ æ–°ä¸€ä»£ç¿»å¢™åˆ©å™¨
 [http://www.weibo.com/ChangYouWuXian](http://www.weibo.com/ChangYouWuXian)
 
-LinuxÈëÃÅ½Ì³Ì/ÎÒÒª×öÑ§°Ô
+Linuxå…¥é—¨æ•™ç¨‹/æˆ‘è¦åšå­¦éœ¸
 [http://www.92csz.com/study/linux/](http://www.92csz.com/study/linux/)
 
-### º£Í¶Íø ÕÒ¹¤×÷ÎÒ¿´ĞĞ
+### æµ·æŠ•ç½‘ æ‰¾å·¥ä½œæˆ‘çœ‹è¡Œ
 [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
 
-º£Í¶Íø ÕÒ¹¤×÷ÎÒ¿´ĞĞ
+æµ·æŠ•ç½‘ æ‰¾å·¥ä½œæˆ‘çœ‹è¡Œ
 [http://xjh.haitou.cc/](http://xjh.haitou.cc/)
 
-ÎäººÀí¹¤Ğ¡³µ Ã»ĞËÈ¤µÄÉ÷µã
+æ­¦æ±‰ç†å·¥å°è½¦ æ²¡å…´è¶£çš„æ…ç‚¹
 [http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html](http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html)
 
