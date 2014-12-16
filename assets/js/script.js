@@ -31,6 +31,7 @@ var clickHandler = function(k) {
     $(this).addClass('active').siblings().removeClass('active');
     tag1.hide();
     window['tag'+k].delay(50).fadeIn(350);
+	window.location.reload(); 
   }
 };
 for (var i = 1; i <= 9; i++) {
