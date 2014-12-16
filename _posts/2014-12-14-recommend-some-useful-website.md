@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Recommend you some useful website"
+title:  "Recommend you some useful website你好"
 date:   2014-12-15 00:38:39
 categories: editor
 ---
@@ -25,4 +25,3 @@ categories: editor
 ### 武汉理工小车 没兴趣的慎点
 [http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html](http://v.youku.com/v_show/id_XNjYyNTc4MTgw.html)
 
-#### 武汉理工小车/没兴趣的慎点
