@@ -2,7 +2,7 @@
 layout: post
 title:  "在Atom里面配置Snippets"
 date:    2014-10-15 20:22
-categories: editor
+categories: other
 ---
 
 想当初邮件申请试用的时候**Atom**没有理我，感觉好失落，同时也就把它抛到脑后了。
