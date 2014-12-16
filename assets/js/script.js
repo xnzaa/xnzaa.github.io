@@ -12,12 +12,12 @@ if ($(window).width() <= 1280) {
 
 // Variables
     tag1       = $('.pl__all'),
-    tag2       = $('.android'),
-    tag3       = $('.editor'),
-    tag4       = $('.algorithm'),
+    tag2       = $('.embedded'),
+    tag3       = $('.algorithm'),
+    tag4       = $('.linux'),
     tag5       = $('.network'),
-    tag6       = $('.system'),
-    tag7       = $('.reading'),
+    tag6       = $('.android'),
+    tag7       = $('.rtos'),
     tag8       = $('.life');
 	tag9       = $('.other');
 var sidebar    = $('#sidebar'),
