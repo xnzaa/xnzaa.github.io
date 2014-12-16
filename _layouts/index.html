@@ -10,25 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
-
-	<script language="JavaScript">
-	 function window.onbeforeunload(){ 
- 
- var scrollPos; 
- scrollPos=div_pdulist.scrollTop;
- document.cookie="scrollTop="+scrollPos; 
- }
-
-	 function window.onload() 
- { 
- var arr; 
- if(arr=document.cookie.match(/scrollTop=([^;]+)(;|$)/)) 
- //document.documentElement.scrollTop=parseInt(arr[1]); 
- div_pdulist.scrollTop=parseInt(arr[1]); // div_pdulist是一个div的id；
-  
- }
-	</script>
-  </head>
+ </head>
   <body>
     <aside id="sidebar">
       <nav id="tags">
@@ -84,7 +66,23 @@
       </div>
     </div> <!-- end #post -->
 
-    
+    	<script language="JavaScript">
+	 function window.onbeforeunload(){ 
+ 
+ var scrollPos; 
+ scrollPos=div_pdulist.scrollTop;
+ document.cookie="scrollTop="+scrollPos; 
+ }
+
+	 function window.onload() 
+ { 
+ var arr; 
+ if(arr=document.cookie.match(/scrollTop=([^;]+)(;|$)/)) 
+ //document.documentElement.scrollTop=parseInt(arr[1]); 
+ div_pdulist.scrollTop=parseInt(arr[1]); // div_pdulist是一个div的id；
+  
+ }
+	</script>
 
     <script src="/assets/js/jquery-2.0.3.min.js"></script>
     <script src="/assets/js/jquery.pjax.js"></script>
