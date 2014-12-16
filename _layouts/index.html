@@ -9,6 +9,25 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+
+	<script language="JavaScript">
+	 function window.onbeforeunload(){ 
+ 
+ var scrollPos; 
+ scrollPos=div_pdulist.scrollTop;
+ document.cookie="scrollTop="+scrollPos; 
+ }
+
+	 function window.onload() 
+ { 
+ var arr; 
+ if(arr=document.cookie.match(/scrollTop=([^;]+)(;|$)/)) 
+ //document.documentElement.scrollTop=parseInt(arr[1]); 
+ div_pdulist.scrollTop=parseInt(arr[1]); // div_pdulist是一个div的id；
+  
+ }
+	</script>
   </head>
   <body>
     <aside id="sidebar">
