@@ -1,3 +1,3 @@
 git stage *
-git commit -m "change index"
+git commit -m "change post"
 git push
