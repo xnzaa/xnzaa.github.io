@@ -50,7 +50,7 @@ Kickoff menu -> Computer tab -> YaST -> software -> Software Repositories -> Cli
 ```
 
 #### then input following things in the input boxes:
-
+tr 科技南开
 
 
 
