@@ -1,2 +1,4 @@
 _site
 .sass-cache
+[alias]
+  delete = !git ls-files -z --deleted | xargs -0 git rm
