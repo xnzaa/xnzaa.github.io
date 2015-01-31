@@ -5,7 +5,7 @@ date:    2015-01-31 16:20
 categories: network
 ---
 
-Foreword：人老了，什么都会忘记，这里记一些我的独门秘籍，千万不要偷看！！！
+Foreword：人老了，什么都会忘记，这里记一些我的独门秘籍，外人千万不要偷看！！！
 
 ### What is Socket
   Socket直译‘插座’，技术翻译‘套接字’，是操作系统提供的一个TCP/IP协议网络编程接口，它运行在TCP/IP协议的应用层
@@ -20,17 +20,17 @@ Foreword：人老了，什么都会忘记，这里记一些我的独门秘籍，
   
   Demo1可以处理多个连接，接收完数据后显示接收到的数据，断开连接，处理其他连接。
 
-  [Demo1](https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo1)
+  [Demo1 https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo1](https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo1)
 
   Demo2循环处理一个连接，不断的结束数据，然后将接收到的数据回发。
 
-  [Demo2](https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo2)
+  [Demo2 https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo2](https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo2)
 
 ### UDP Demo
   UDP是无连接的，传输不可靠。适合大流量的数据传输。编程相对简单一些。
 
   UDP 不需要建立连接，Demo中发数据抛出去就不管了，接数据就一直监听某个端口
-  [Demo](https://github.com/xnzaa/socket_linux/tree/master/UDP)
+  [Demo https://github.com/xnzaa/socket_linux/tree/master/UDP](https://github.com/xnzaa/socket_linux/tree/master/UDP)
 
 ### Remark
   由于服务器端需要一个死循环不停的监听是否有数据传来，在实际编程使用过程中常常结合多线程编程来解决
