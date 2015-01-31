@@ -5,7 +5,7 @@ date:    2015-01-31 16:20
 categories: network
 ---
 
-Foreword：人老了，什么都会忘记，这里记一些我的独门秘籍，千万不要偷看！！！
+
 
 ### What is Socket
   Socket直译‘插座’，技术翻译‘套接字’，是操作系统提供的一个TCP/IP协议网络编程接口，它运行在TCP/IP协议的应用层
