@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "LinuxÏÂSocketÍ¨ĞÅ´úÂë»ã×Ü"
+title:  "Linuxä¸‹Socketé€šä¿¡ä»£ç æ±‡æ€»"
 date:   2015-01-31 16:20
 categories: network
 ---

@@ -2,8 +2,10 @@
 layout: post
 title:  "Linux下Socket代码备忘"
 date:    2015-01-31 16:20
-categories: linux
+categories: network
 ---
+
+Foreword：人老了，什么都会忘记，这里记一些我的独门秘籍，千万不要偷看！！！
 
 ### What is Socket
   Socket直译‘插座’，技术翻译‘套接字’，是操作系统提供的一个TCP/IP协议网络编程接口，它运行在TCP/IP协议的应用层
@@ -14,7 +16,7 @@ categories: linux
 
 ### TCP Demo
   TCP是连接的，传输可靠。适合小流量，高安全的数据传输。编程相对复杂一些。
-  下面是2个TCP协议的Demo。
+  下面是2个TCP协议的Demo:
   
   Demo1可以处理多个连接，接收完数据后显示接收到的数据，断开连接，处理其他连接。
   [Demo1](https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo1)
