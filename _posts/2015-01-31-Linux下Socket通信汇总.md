@@ -22,7 +22,7 @@ Foreword：人老了，什么都会忘记，这里记一些我的独门秘籍，
 
   [Demo1 https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo1](https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo1)
 
-  Demo2循环处理一个连接，不断的结束数据，然后将接收到的数据回发。
+  Demo2循环处理一个连接，不断的接收数据，然后将接收到的数据回发。
 
   [Demo2 https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo2](https://github.com/xnzaa/socket_linux/tree/master/TCP/Demo2)
 
