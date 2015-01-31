@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux下Socket通信代码汇总"
-date:   2015-01-31 16:20
-categories: network
+title:  "C与shell的相互调用"
+date:   2014-01-31 16:20
+categories: linux
 ---
