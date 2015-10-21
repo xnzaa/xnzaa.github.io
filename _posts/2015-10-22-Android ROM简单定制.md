@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "简单定制Android ROM"
+date:    2015-10-22 18:20
+categories: Android
+---
+
+### 用途
+
+### 简单定制-修改开机动画
+
+Android开机动画主要由两部分组成:
+#### linux内核启动画面:
+
+#### Android应用层启动画面
