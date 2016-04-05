@@ -2,7 +2,7 @@
 layout: post
 title:  "《Effective C++》-读书笔记"
 date:    2016-01-26 19:20
-categories: Life
+categories: life
 ---
 ## 背景
 前几天看完了C++
