@@ -1,3 +1,3 @@
 git stage *
-git commit -m %1
+git commit -m "change post"
 git push
