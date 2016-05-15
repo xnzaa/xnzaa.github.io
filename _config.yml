@@ -1,1 +1,100 @@
-pygments: true
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://xnzaa.github.io
+date_format: "ordinal"
+title: 小鸟在嗷嗷
+subtitle: "努力寻找我的奶酪~"
+description: "个人博客"
+keywords: 小鸟在嗷嗷,blog
+favicon: /assets/images/favicon.ico
+timezone: Beijing
+encoding: "UTF-8"
+source_code: https://github.com/xnzaa/xnzaa.github.io
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Bing xu
+organization: Hust
+#organization_url: https://www.hust.edu.cn
+location: Wuhan, China
+email: imxubing@163.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 博客主页
+
+  -
+    href: /categories/
+    label: 文章分类
+
+  -
+    href: /expend/
+    label: 扩充页面
+
+  -
+    href: /about/
+    label: 关于我
+
+# ---------------- #
+#       RSS:null   #
+# ---------------- #
+subscribe_rss: null #/feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+# ---------------- #
+#      Socials     #
+# ---------------- #
+github_username: xnzaa
+QQ: 649981201
+Email: 649981201@qq.com
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, duoshuo, changyan
+
+# !!!Important!!! Please modify usernames below to yours
+#多说评论服务供应商
+comments_provider: duoshuo
+duoshuo_username: xubing
+#百度统计
+baidu_statistics: d0bee4b588a6732505f743a27e4cb5e3
+# ---------------- #
+#      Datas       #
+# ---------------- #
+skill_software_keywords: [C++, Java]
+skill_mobile_app_keywords: ["NULL"]
+skill_windows_keywords: ["NULL"]
+#popular_repos: ['chinese-copywriting-guidelines','android-reverse-engineering', 'csdncommenter', 'mzlogin.github.io', 'vim-markdown-toc']
+#contribute_repos: ['sparanoid/chinese-copywriting-guidelines', 'waylife/RentCrawer']
