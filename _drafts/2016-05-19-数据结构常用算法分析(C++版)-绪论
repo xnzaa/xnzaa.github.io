@@ -27,24 +27,57 @@ comments: true
 
 ### 二份递归
 
-｀｀｀
+```
 ／／代码
 int fib(int n)
 {
 if(n==0||n==1)
 return n;
-else return fib(n-1)+fib(n-2);
+else
+return fib(n-1)+fib(n-2);
 } 
-
-｀｀｀
+```
 时间复杂度分析：
-
+O(2^n)
 
 ### 改进1：线性递归
+```
+int fib(int n,int & prev)
+{
+if(n == 0)
+{
+prev=0;
+return 0;
+}
+int prevprev=fib(n-1,prev);
+return prevprev+prev;
+}
+```
+空间复杂度：O(n)
+时间复杂度：O(n)
 
 ###改进２：迭代
 
+```
+int fib(int n)
+{
+int f=0,g=1;
+while(0<n--)
+{
+g=f+g;//prevprev
+f=g-f;//prev
+}
+return g;
+}
+```
 
-总结：一个函数的递归调用中，任意子递归是应该独立求解的，如果一个子问题需要另一个子问题的值，或者子问题之间有相互调用，就会引起时间 或空间的无谓增加，应尽量消除这些问题~
+时间复杂度：O(n)
+空间复杂度：O(1)
+
+总结：一个函数的递归调用中，任意子递归是应该独立求解的，如果一个子问题需要另一个子问题的值，或者子问题之间有相互调用，就会引起时间或空间的无谓增加，应尽量利用两个子问题之间的关系，改善递归方法，消除这些问题~
+
+
+下一张：[线性表](www.baidu.com)
+
 
 
