@@ -1,5 +1,5 @@
 .post-directory {
-    font-size: 14px;
+    font-size: 15px;
     background: #fff;
     overflow: hidden;
     width: 300px;
@@ -21,13 +21,13 @@
 
 .post-directory a {
     text-decoration: none;
-    color: #bababa;
+    color: #0906B7;
 }
 
 .post-directory a:hover,
 .post-directory a:active,
 .post-directory a.on {
-    color: #4183c4;
+    color: #0AB336;
 }
 
 .posts-list {
