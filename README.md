@@ -1,7 +1,7 @@
-## README
+## 感谢
 
 个人博客：<http://xnzaa.github.io>
-主题及模板使用 [DONGChuan](http://dongchuan.github.io) ，感谢！
+主题及模板使用 [DONGChuan](http://dongchuan.github.io) ，真的真的真的非常感谢！
 
 ## 原理
 博客基于[jekyll](http://jekyll.bootcss.com/)静态网页建设
