@@ -23,13 +23,53 @@ comments: true
 
 ## 其他递归
 
+闲来看看递归情况下树的遍历吧，本文以二叉树为例！
+
+### 递归遍历
+```cpp
+//先序
+template <typename T>
+void tree<T>::pre_travel1(const tree_node<T> * root)  const
+{
+	if(root == NULL) return;
+	cout<<root->data<<endl;
+	pre_travel1(root->lchild);
+	pre_travel1(root->rchild);
+}
+
+//中序
+template <typename T>
+void tree<T>::mid_travel1(const tree_node<T> * root) const
+{
+	if(root == NULL) return;
+	mid_travel1(root->lchild);
+	cout<<root->data<<endl;
+	mid_travel1(root->rchild);
+}
+
+//后序
+template <typename T>
+void tree<T>::post_travel1(const tree_node<T> * root) const
+{
+	if(root == NULL) return;
+	post_travel1(root->lchild);
+	post_travel1(root->rchild);
+	cout<<root->data<<endl;
+}
+
+```
+
+### 循环遍历
+
 先序遍历
 
 ```cpp
 
+
 ```
 
 ```cpp
+
 
 ```
 
