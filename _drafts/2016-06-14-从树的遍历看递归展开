@@ -13,11 +13,54 @@ comments: true
 
 本文就从树的3种遍历方式：先序遍历、中序遍历、后续遍历实际问题出发，针对 2中递归方式 尾部递归，其他递归，来讲解一下，常用递归展开的基本思想与方法。
 
+本文的代码已经托管到了github: [我是代码，快点我~]()
+
+### 数据结构
+
+本文使用以下的数据结构
+
+```cpp
+template <typename T1>
+class tree_node
+{
+public:
+	T1 data;
+	tree_node * lchild;
+	tree_node * rchild;
+	tree_node()
+	{
+		lchild=NULL;
+		rchild=NULL;
+	}
+	tree_node(T1 d)
+	{
+		data=d;
+		lchild=NULL;
+		rchild=NULL;
+	}
+};
+
+template <typename T>
+class tree
+{
+public:
+	tree_node<T> * root;
+	void pre_travel1(const tree_node<T> *) const;
+	void mid_travel1(const tree_node<T> *) const;
+	void post_travel1(const tree_node<T> *) const;
+	void level_travel(tree_node<T> *);
+	void pre_travel2(tree_node<T> *);
+	void mid_travel2(tree_node<T> *);
+	void post_travel2(tree_node<T> *);
+};
+
+```
 
 
 ## 尾递归还是伪递归
 
 ```cpp
+
 
 ```
 
@@ -26,6 +69,7 @@ comments: true
 闲来看看递归情况下树的遍历吧，本文以二叉树为例！
 
 ### 递归遍历
+
 ```cpp
 //先序
 template <typename T>
@@ -59,17 +103,159 @@ void tree<T>::post_travel1(const tree_node<T> * root) const
 
 ```
 
+    呐，上面就是树遍历的递归实现，是不是超级简单，只需要调整输出的位置，就能轻松改变遍历方式，
+当然，这得益于树本身就是使用递归进行定义的！
+    下面就从非递归的角度，来告诉你树遍历的真正步骤~
+
 ### 循环遍历
+
+为了方便理解&记忆，引入以下编程规范：
+
+ * 空指针可入栈/队，需要实时判断栈顶元素是否为NULL
+
+
+层序遍历
+
+层序遍历使用队列作为辅助存储，循环之后，每个节点就乖乖听话，依次排好队了，在出队的时候进行输出操作，就可以实现对树的层序遍历！
+
+```cpp
+
+template <typename T>
+void tree<T>::level_travel(tree_node<T> * root) 
+{
+	queue<tree_node<T> *> q;
+	q.push(root);
+	while(!q.empty())
+	{
+		root= q.front();
+		cout<<root->data<<endl;
+		if(root->lchild)
+			q.push(root->lchild);
+		if(root->rchild)
+			q.push(root->rchild);
+		q.pop();
+	}
+}
+
+```
 
 先序遍历
 
+先序遍历算法的基本思想是： `每个循环都是一个新树`
+
+ * 从根节点，向左深入，并输出路径上的节点，路径上节点的右孩子依次入栈；
+ * 若左孩子为NULL，则最近的右孩子出栈，并作为根节点进入下一次循环；
+ * 直到栈为空，所有右孩子访问完毕！即整棵树遍历完毕~
+
 ```cpp
+
+template <typename T>
+void tree<T>::pre_travel2(tree_node<T> * root)
+{
+	stack<tree_node<T> *> s;
+	s.push(root);
+	while(!s.empty())
+	{
+		cout<<root->data<<endl;
+		if(root->rchild)
+			s.push(root->rchild);
+		if(root->lchild)
+		{
+			root = root->lchild;
+		}
+		else
+		{
+			root= s.top();
+			s.pop();
+		}
+	}
+}
 
 
 ```
 
+中序遍历
+
+中序遍历算法的基本思想：`每个循环都是一个新树`
+
+ * 从根节点开始，向左深入，并入栈每个节点 
+ * 
+ * 
+
+```cpp
+template <typename T>
+void tree<T>::mid_travel2(tree_node<T> * root)
+{
+	stack<tree_node<T> *> s;
+	if(root == NULL)
+	{
+		return;
+	}
+
+	s.push(root);
+
+	do  //每个新循环，都是新“树根”
+	{
+		while(root = s.top())//找到左下角元素
+		{
+			s.push(root ->lchild);
+		}
+		s.pop();   //删去空指针
+		if(!s.empty())
+		{
+			root = s.top();
+			s.pop();
+			cout<<root->data<<endl;
+			s.push(root -> rchild);
+		}
+
+	}while(!s.empty());
+}
+
+```
+
+后续遍历
+
 ```cpp
 
+template <typename T>
+void tree<T>::post_travel2(tree_node<T> * root)
+{
+	tree_node <T> * oldnode=NULL;//保存前一个节点，判断是否是从右节点返回
+	stack<tree_node<T> *> s;
+	if(root == NULL)
+	{
+		return;
+	}
+	do  //每个新循环，都是新“树根”
+	{
+		while(root!=NULL)//找到左下角元素
+		{
+			s.push(root);
+			root = root -> lchild;
+		}
+		root = s.top();
+		cout<<root->data<<endl;
+		oldnode = root;//const_cast<tree_node<T> *>
+		s.pop();
+		root=s.top();
+		while(!s.empty())
+		{
+			if(root->rchild==oldnode)//从右节点返回
+			{
+				cout<<root->data<<endl;
+				oldnode=root;
+				s.pop();
+				s.empty()? NULL:root = s.top(); 
+			}
+			else
+			{
+				root = root->rchild;//有右节点，开始新的搜索
+				break;
+			}
+		}
+	}while(!s.empty());
+}
 
 ```
 
