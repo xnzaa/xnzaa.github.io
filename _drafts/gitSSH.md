@@ -12,3 +12,7 @@ ssh -T git@github.com
 
 
 ²Î¿¼£ºhttps://segmentfault.com/a/1190000002645623
+
+gitºöÂÔÎÄ¼ş
+
+Debug/
