@@ -3,6 +3,7 @@ layout: post
 title:  "《Effective C++》-读书笔记"
 date:    2016-04-05 19:20
 categories: 菜鸟日记
+comments: true
 ---
 ## 背景
 前段时间看完了《C++ Primer》，看这本书有种看字典的感觉。

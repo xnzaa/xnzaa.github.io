@@ -3,6 +3,7 @@ layout: post
 title:  "Linux下Socket编程备忘"
 date:    2015-01-31 16:20
 categories: network
+comments: true
 ---
 
 Foreword：人老了，什么都会忘记，这里记一些我的独门秘籍，外人千万不要偷看！！！
