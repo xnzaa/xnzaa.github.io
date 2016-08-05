@@ -1,0 +1,164 @@
+---
+layout: post
+title:  "排列组合(N-M)通用实现"
+date:    2016-08-05 20:22
+categories: 数据结构与算法
+comments: true
+---
+
+# 1 简介
+
+A(n,m)&C(n,m)
+
+排列组合是非常常见的数学问题！也是许多问题暴力破解的基础！本文呢，主要内容就排列组合的实现，其实搜一下，网上这类问题已经有很多帖子啦！不过本文还是有以下2大优势的：
+
+ * 排列组合统一框架，方便记忆
+ * 针对任意n>=m的情况均适用
+
+那什么统一框架呢？怎么适用`m!=n`的情况呢？一起来看看！
+
+# 2 基本框架
+
+```cpp
+void fun(int n,int m)
+{
+    if(0==m)
+        print();
+    else
+    {
+        for(int i=n-1;i>=0;i--)
+        {
+            ···            
+            fun(*,m-1);            
+            ···
+        }
+    }
+}
+```
+
+ * if+for+递归
+
+1if，2for，3递归，排列问题、组合问题都可以用上面的框架去做！下面通过源码看看到底是怎么用的！
+
+# 3 源码
+
+```cpp
+#include <iostream>
+using namespace std;
+//A(n,m)=n!/m!  C(n,m)=A(n,m)/m!
+//单词备忘：Permutation And Combination 
+
+int from[5]={1,2,3,4,5};
+int result[5];
+int n=5,m=2;
+int count=0;
+
+void pcomb()
+{
+    for(int i=0;i<m;i++)
+        cout<<result[i]<<" ";
+    cout<<endl;
+    count++;
+}
+
+void pperb()
+{
+    for(int i=0;i<m;i++)
+        cout<<from[n-1-i]<<" ";
+    cout<<endl;
+    count++;
+}
+
+void perb(int n,int m)
+{
+    if(0==m)
+        pperb();
+    else
+    {
+        for(int i=n-1;i>=0;i--)
+        {
+            int tmp=from[i];
+            from[i]=from[n-1];
+            from[n-1]=tmp;
+            
+            perb(n-1,m-1);
+            
+            tmp=from[i];
+            from[i]=from[n-1];
+            from[n-1]=tmp;
+        }
+    }
+}
+
+void comb(int n,int m)
+{
+    if(0==m)
+        pcomb();
+    else
+    {
+        for(int i=n-1;i>=0;i--)
+        {
+            result[m-1]=from[i];
+            comb(i,m-1);
+        }
+    }
+}
+
+int main()
+{
+    cout<<"组合的结果："<<endl;
+    comb(n,m);    
+    cout<<"排列的结果："<<endl;
+    perb(n,m);    
+    cout<<"Total:"<<count<<endl;
+    return 0;
+}
+```
+
+## 3.1 排列分析
+
+* 框架使用
+
+是不是使用了2中的基本框架，只需要修改递归参数，传入`perb(n-1,m-1)`
+
+* 源码分析
+
+源码中，从后往前进行元素选取，选取的元素保存到最后！
+
+```
+先取A(n,1) 
+接着选取A(n-1,1)
+直到取m个元素为止
+```
+
+* 性能
+
+时间：性能方面并没有提升，依旧为A(n,m)=n!/m!  好尴尬!
+
+空间：并没有引入多余的空间，所以空间复杂度还是不错的！^_^
+
+## 3.2 组合分析
+
+* 框架使用
+
+是不是也使用了2中的基本框架，因为组合问题元素不能重复出现，只需要修改递归参数，传入`comb(i,m-1);`
+
+* 源码分析
+
+源码中，从后往前进行元素选取，选取的元素保存到最后！
+
+```
+先取C(n,1)
+因为不能重复取，以后只能从前i个未取过的元素中取
+直到取m个元素为止
+```
+
+* 性能
+
+时间：性能方面也没有提升，依旧为A(n,m)=n!/m!/m! 
+
+空间：除了结果数组，也没有引入多余的空间，所以空间复杂度还是不错的！^_^
+
+# 5 结束
+
+上面就是我设计的排列组合模版！是不是很好记忆？是的！
