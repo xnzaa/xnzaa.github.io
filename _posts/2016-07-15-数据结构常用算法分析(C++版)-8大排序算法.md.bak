@@ -173,10 +173,12 @@ void adjustheap(vector<int> &heap,int s)
 	heap[s]=tmp;
 }
 
-void heap_sort(vector<int> &heap)
+void heap_sort(vector<int> &v)
 {
 	double start=clock();
-	int tmp=0;
+	
+	vector<int> heap(v);
+	v.clear();
 	//建堆
 	for(int i=heap.size()/2;i>=0;i--)
 	{
@@ -185,10 +187,10 @@ void heap_sort(vector<int> &heap)
 	//输出并调整堆
 	for(int j=heap.size();j>0;j--)
 	{
+		v.push_back(heap[0]);
 		heap[0]=heap.back();
 		heap.pop_back();
 		adjustheap(heap,0);
-		heap[j]=heap[0];
 	}
 	double end=clock();
 	sort_print(v,end-start);
