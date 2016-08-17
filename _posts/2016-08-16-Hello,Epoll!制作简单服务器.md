@@ -291,7 +291,7 @@ int main()
 
 # 4 测试及运行
 
-测试方法
+## 4.1 测试方法
 
 ```bash
 启动压力测试：
@@ -308,16 +308,20 @@ for i in {1..500};
 
 ```
 
-[](https://github.com/xnzaa/xnzaa.github.io/raw/master/_images/Net/2016-08-16-HelloEpoll%E5%88%B6%E4%BD%9C%E7%AE%80%E5%8D%95%E6%9C%8D%E5%8A%A1%E5%99%A8/server.png)
+## 4.2 运行结果
 
-[!客户端运行结果](https://raw.githubusercontent.com/xnzaa/xnzaa.github.io/master/_images/Net/2016-08-16-HelloEpoll%E5%88%B6%E4%BD%9C%E7%AE%80%E5%8D%95%E6%9C%8D%E5%8A%A1%E5%99%A8/client.png)
+下图中，一共8个客户端连接如服务器，第8个客户端发送一条数据后，主动关闭连接！
 
-上图中，客户端一共注册8个，第8个客户端发送一条数据后，主动关闭连接！
+![服务器运行结果](https://github.com/xnzaa/xnzaa.github.io/raw/master/_images/Net/2016-08-16-HelloEpoll%E5%88%B6%E4%BD%9C%E7%AE%80%E5%8D%95%E6%9C%8D%E5%8A%A1%E5%99%A8/server.png)
+
+![客户端运行结果](https://raw.githubusercontent.com/xnzaa/xnzaa.github.io/master/_images/Net/2016-08-16-HelloEpoll%E5%88%B6%E4%BD%9C%E7%AE%80%E5%8D%95%E6%9C%8D%E5%8A%A1%E5%99%A8/client.png)
+
 
 # 5 结束
 
-以前写网络服务器程序，都是每一个连接，新建一个进程，
-epoll通过设计特殊的数据结构，实现了单进程多个连接的并发，这应该是我学到的最有用的地方吧！
+以前写网络服务器程序，都是每一个连接，新建一个进程，epoll通过设计特殊的数据结构，实现了单进程多个连接的并发。
+
+以前觉得多线程设计很高端，现在更觉得，如果单线程可以解决的问题，尽量不要用多线程 ！这应该是我学到的最有用的地方吧！
 
 # 6 参考
 
