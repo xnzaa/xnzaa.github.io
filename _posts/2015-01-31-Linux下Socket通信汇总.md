@@ -2,7 +2,7 @@
 layout: post
 title:  "Linux下Socket编程备忘"
 date:    2015-01-31 16:20
-categories: network
+categories: Network
 comments: true
 ---
 
